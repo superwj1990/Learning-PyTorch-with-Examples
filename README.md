@@ -19,7 +19,7 @@ PyTorch的核心是提供了两个主要的新特点：<br>
 * PyTorch: Custom nn Modules<br>
 * PyTorch: Control Flow and Weight Sharing<br>
 
-##Warm-up:numpy
+##Warm-up:numpy<br>
 在介绍PyTorch之前，我们首先用numpy来实现网络。<br>
 Numpy提供了一个n维数组对象，以及许多操作这些数组的函数。Numpy是一个科学计算的通用框架；它与计算图、深度学习和梯度无关。然而我们可以通过使用numpy操作手动实现网络的forward和backward传播，使得一个两层的网络可以拟合随机的数据：<br>
 
