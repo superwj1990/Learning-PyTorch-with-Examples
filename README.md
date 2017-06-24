@@ -146,8 +146,7 @@ learning_rate = 1e-6
 for t in range(500):
   # Forward pass: compute predicted y using operations on Variables; these
   # are exactly the same operations we used to compute the forward pass using
-  # Tensors, but we do not need to keep references to intermediate values
-# since
+  # Tensors, but we do not need to keep references to intermediate values since
   # we are not implementing the backward pass by hand.
   y_pred = x.mm(w1).clamp(min=0).mm(w2)
   
@@ -170,8 +169,8 @@ for t in range(500):
   w2.data -= learning_rate * w2.grad.data
 
   # Here is different from the source code. When we define the Variable x,
-# the x.grad is none, x.grad.data is non-existent. So we excute the
-# following two lines of code after backward().
+  # the x.grad is none, x.grad.data is non-existent. So we excute the
+  # following two lines of code after backward().
   # Manually zero the gradients before running the backward pass
   w1.grad.data.zero_()
   w2.grad.data.zero_()
