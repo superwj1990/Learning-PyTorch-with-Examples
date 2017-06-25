@@ -1,4 +1,4 @@
-
+<p align="center"><img width="40%" src="pytorch-logo-dark.png" /></p>
 
 --------------------------------------------------------------------------------
  
@@ -50,7 +50,7 @@ for t in range(500):
   # Compute and print loss
   loss = np.square(y_pred - y).sum()
   print(t, loss)
-  
+   
   # Backprop to compute gradients of w1 and w2 with respect to loss
   grad_y_pred = 2.0 * (y_pred - y)
   grad_w2 = h_relu.T.dot(grad_y_pred)
