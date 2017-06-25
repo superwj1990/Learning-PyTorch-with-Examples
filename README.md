@@ -251,16 +251,16 @@ for t in range(500)
   loss = (y_pred - y).pow(2).sum()
   print(t, loss.data[0])
   
-  # Manually zero the gradients before running the backward pass
-  w1.grad.data.zero_()
-  w2.grad.data.zero_()
-
   # Use autograd to compute the backward pass.
   loss.backward()
 
   # Update weights using gradient descent
   w1.data -= learning_rate * w1.grad.data
   w2.data -= learning_rate * w2.grad.data
+  
+  # Manually zero the gradients before running the backward pass
+  w1.grad.data.zero_()
+  w2.grad.data.zero_()
 ```
 ## TensorFlow: Static Graphs<br>
 PyTorch的autograd与TensorFlow相似：两个框架中我们都定义了一个计算图，且使用自动微分来计算梯度。它们之间最大的不同是TensorFlow的计算图是静态的，而PyTorch的是动态的。<br>
