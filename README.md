@@ -10,15 +10,15 @@ PyTorch的核心是提供了两个主要的新特点：<br>
 我们使用一个全连接的ReLU网络作为我们的运行示例。这个网络包含一个隐含层，用梯度下降法来对其进行训练，并通过最小化网络输出和真实输出之间的欧几里得距离来拟合随机的数据。<br>
 
 ## 目录<br>
-* Warm-up: numpy<br>
-* PyTorch: Tensors<br>
-* PyTorch: Variables and autograd<br>
-* PyTorch: Defining new autograd functions<br>
-* TensorFlow: Static Graphs<br>
-* PyTorch: nn<br>
-* PyTorch: optim<br>
-* PyTorch: Custom nn Modules<br>
-* PyTorch: Control Flow and Weight Sharing<br>
+* [Warm-up: numpy](https://github.com/superwj1990/Learning-PyTorch-with-Examples#warm-up-numpy)<br>
+* [PyTorch: Tensors](https://github.com/superwj1990/Learning-PyTorch-with-Examples#pytorch-tensors)<br>
+* [PyTorch: Variables and autograd](https://github.com/superwj1990/Learning-PyTorch-with-Examples#pytorch-variables-and-autograd)<br>
+* [PyTorch: Defining new autograd functions](https://github.com/superwj1990/Learning-PyTorch-with-Examples#pytorch-defining-new-autograd-functions)<br>
+* [TensorFlow: Static Graphs](https://github.com/superwj1990/Learning-PyTorch-with-Examples#tensorflow-static-graphs)<br>
+* [PyTorch: nn](https://github.com/superwj1990/Learning-PyTorch-with-Examples#pytorch-nn)<br>
+* [PyTorch: optim](https://github.com/superwj1990/Learning-PyTorch-with-Examples#pytorch-optim)<br>
+* [PyTorch: Custom nn Modules](https://github.com/superwj1990/Learning-PyTorch-with-Examples#pytorch-custom-nn-modules)<br>
+* [PyTorch: Control Flow and Weight Sharing](https://github.com/superwj1990/Learning-PyTorch-with-Examples#pytorch-control-flow--weight-sharing)<br>
 
 ## Warm-up: numpy<br>
 在介绍PyTorch之前，我们首先用numpy来实现网络。<br>
